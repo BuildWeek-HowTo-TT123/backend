@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
 
-  "buildOptions": {"compile": {"exclude": [ "node_modules" ]},
+  "buildOptions": {"compile": {"exclude": [ "node_modules" ]}},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "cross-env NODE_ENV=development nodemon index.js",
