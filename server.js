@@ -6,7 +6,7 @@ const authRouter=require("./router/router")
 
 
 const server=express();
-
+server.use(cors())
 server.use(express.json())
 server.use("/api",authRouter)
 server.get("/", (req, res)=>{
