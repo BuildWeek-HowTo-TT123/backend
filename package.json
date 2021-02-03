@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
-  "buildOptions": {"compile": {"exclude": [ "node_modules" ]}},
+  "buildOptions": {
+    "compile": {
+      "exclude": [
+        "node_modules"
+      ]
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "cross-env NODE_ENV=development nodemon index.js",
     "start": "node index.js"
-    
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,7 @@
   "homepage": "https://github.com/BuildWeek-HowTo-TT123/backend#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^4.4.1",

@@ -12,7 +12,8 @@ const router = express.Router();
 //Returns a list of classes
 router.get("/users", async (req, res, next) => {
   try {
-   return res.json(await usersModel.find());
+  res.json(await usersModel.find());
+  next()
   } catch (err) {
     next(err);
   }
