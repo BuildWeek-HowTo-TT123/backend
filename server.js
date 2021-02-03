@@ -1,4 +1,4 @@
-// require("dotenv")
+//  const dotenv=require("dotenv")
 const express=require("express")
 const cors=require("cors")
 const helmet=require("helmet")
@@ -14,11 +14,11 @@ server.get("/", (req, res)=>{
    res.json({message: `!!!!Welcome to HowtoZ00  !!!!! `})
 })
 
-server.use((err, req, res, next) => {
+/* server.use((err, req, res, next) => {
     console.log(err);
     res.status(500).json({ message: "Something went wrong" });
   });
-
+ */
 // server.use()
 
 module.exports=server
