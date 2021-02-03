@@ -5,16 +5,7 @@ async function add(user) {
   return findById(id);
 }
 
-/* async function addClient(user) {
-  const [id] = await db("clients").insert(user);
-  console.log("model", id);
-  return findByClientId(id);
-} */
 
-//
-/* function findInstructors() {
-  return db("instructors").select("id", "name", "username");
-} */
 
 function find() {
   return db("users").select("id", "name", "username");
@@ -27,16 +18,7 @@ function findById(id) {
     .first();
 }
 
-/* function findByClientId(id) {
-  return db("clients")
-    .select("id", "name", "username", "role")
-    .where({ id })
-    .first();
-} */
 
-/* function findByInstructors(filter) {
-  return db("instructors").select("*").where(filter);
-} */
 
 function findByHowtoz(filter) {
   return db("howtoz").select("*").where(filter);
