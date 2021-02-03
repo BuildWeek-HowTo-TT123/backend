@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cross-env NODE_ENV=development nodemon index.js",
+    "server": "cross-env NODE_ENV=development  nodemon  index.js",
     "start": "node index.js"
   },
   "repository": {
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.7"
   }
 }
